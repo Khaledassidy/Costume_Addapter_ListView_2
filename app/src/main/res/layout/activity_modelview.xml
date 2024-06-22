@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".modelview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve_linear_layout"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="#777676"
+        android:layout_alignParentStart="true"
+        android:padding="20dp"
+        android:layout_alignParentEnd="true">
+
+
+
+
+            <TextClock
+                android:id="@+id/text_clock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="TODO"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold">
+
+            </TextClock>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_clock"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:focusable="false"
+                    tools:ignore="TouchTargetSizeCheck,VisualLintBounds">
+
+                </CheckBox>
+
+
+                <TextView
+                    android:id="@+id/title_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:hint="Title"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry">
+
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/subtitle_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Subtitle"
+                android:minHeight="48dp"
+                android:paddingLeft="5dp"
+                android:textColor="#DCDCDC"
+                android:textColorHint="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:fontFamily="sans-serif"
+                android:hint="enter the note"
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="25sp"
+                tools:ignore="RtlSymmetry"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
